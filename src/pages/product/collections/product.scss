@@ -1,0 +1,104 @@
+.products-container {
+    font-family: "GT Flexa Lt";
+    padding: 0px 30px;
+
+    .active {
+        border-bottom: 1px solid $brown;
+    }
+
+    .collection-navgivation {
+        display: flex;
+        width: 25%;
+        justify-content: space-between;
+        color: $brown;
+        margin-top: 3%;
+
+        span {
+            cursor: pointer;
+
+            &:hover {
+                border-bottom: 1px solid $brown;
+            }
+        }
+    }
+
+    .product-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        min-width: 100%;
+        margin: 3% 0px;
+
+        .product-item {
+            width: 400px;
+            margin-bottom: 40px;
+
+            .product-item-image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 480px;
+                background-color: #e3ded7;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #d6d0c8;
+                }
+
+                img {
+                    width: 60%;
+                }
+            }
+
+            .product-item-content {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0px;
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-family: "Windsor Pro", sans-serif;
+                    letter-spacing: 2px;
+                }
+            }
+
+            .addToCart-button {
+                background-color: black;
+                color: $main_color;
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

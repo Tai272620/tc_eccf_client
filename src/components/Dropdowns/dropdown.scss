@@ -1,0 +1,53 @@
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 35px;
+  font-size: 0.8rem;
+  // left: 50px;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+.account-btn {
+  border: none !important;
+  box-shadow: none;
+  font-size: 30px;
+  // background-color: red;
+}
+
+.dropdown-toggle {
+  box-shadow: none !important;
+}
+
+.dropdown-toggle:after {
+  display: none;
+}
+
+.dropdown {
+  padding: 0px !important;
+
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    font-size: 1.5rem;
+
+    span {
+      font-size: 7px !important;
+      // margin-top: -9px;
+    }
+
+    .userName {
+      font-weight: 900;
+    }
+  }
+}
+
+.ant-btn {
+  color: black;
+  border: 1px solid black;
+}

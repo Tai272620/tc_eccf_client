@@ -1,0 +1,32 @@
+.adminNav-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    // border-right: 1px solid black;
+    height: 100vh;
+    padding: 20px 40px 40px 40px;
+    font-family: $content_font;
+
+    h1 {
+        font-size: 3rem;
+        font-family: $title_font;
+        margin-left: 50px;
+    }
+
+    .navLink {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 4px;
+
+        .material-symbols-outlined {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background-color: #ced2d4;
+        }
+    }
+}

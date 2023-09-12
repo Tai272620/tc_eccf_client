@@ -1,0 +1,21 @@
+.multicarousel-container {
+    padding: 20px;
+
+    h2 {
+        font-family: 'Windsor Pro', sans-serif;
+        letter-spacing: 1px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .product {
+        cursor: pointer;
+
+        p {
+            text-align: center;
+            font-family: 'Windsor Pro', sans-serif;
+            font-size: 1.75rem;
+            margin-top: -20px;
+        }
+    }
+}

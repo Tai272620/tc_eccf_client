@@ -1,0 +1,93 @@
+.footer-top {
+    background-color: #e3ded7;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 30px;
+    margin: 0 auto;
+
+    .footer-left {
+        p {
+            font-family: "GT Flexa Lt";
+        }
+
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-family: 'Windsor Pro', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            cursor: pointer;
+            line-height: 3.5rem;
+        }
+    }
+
+    .footer-middle {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .footer-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-family: "GT Flexa Lt";
+
+            p {
+                font-size: 1rem;
+            }
+
+            span {
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .footer-right {
+        width: 20%;
+        font-family: "GT Flexa Lt";
+
+        p {
+            font-size: 13px;
+        }
+
+        input {
+            outline: none;
+            border-bottom: 1px solid black;
+            background-color: #e3ded7;
+            font-size: 12px;
+            width: 90%;
+        }
+
+        input::placeholder {
+            font-family: "GT Flexa Lt";
+            color: black;
+            background-color: #e3ded7;
+        }
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 30px 30px;
+    background-color: #e3ded7;
+    font-family: "GT Flexa Lt";
+
+    p {
+        font-size: 12px;
+    }
+
+    .social-media-icon {
+        display: flex;
+        justify-content: space-between;
+        width: 15%;
+        font-size: 20px;
+
+        span {
+            cursor: pointer;
+        }
+    }
+}

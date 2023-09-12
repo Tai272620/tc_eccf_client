@@ -1,0 +1,133 @@
+.cart-header {
+    border-bottom: 1px solid black;
+    background-color: #f6f5f3;
+    font-family: "GT Flexa Lt";
+    color: black;
+
+    .offcanvas-title {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .close-button {
+        color: black;
+        border: none;
+    }
+}
+
+.cart-body {
+    font-family: "GT Flexa Lt";
+    background-color: #f6f5f3;
+
+    p {
+        display: flex;
+        font-size: 0.9rem;
+
+        img {
+            width: 35px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    }
+
+    .cart-products {
+        display: flex;
+        flex-direction: column;
+        max-height: 70vh;
+        overflow-y: scroll;
+        color: black;
+
+        .cart-product {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #514c49;
+            border-bottom: 1px solid #514c49;
+            padding: 20px 0px;
+
+            .cart-product-img {
+                width: 20%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .cart-product-infor {
+                width: 70%;
+
+                h5 {
+                    font-weight: 900;
+                    font-size: 1.15rem;
+                    margin-bottom: 10px;
+                }
+
+                .cart-product-quantity-title {
+                    font-size: 0.7rem;
+                    margin-top: 10px;
+                }
+
+                .cart-product-quantity {
+                    display: flex;
+                    align-items: center;
+
+                    .material-symbols-outlined {
+                        font-size: 1.1rem;
+                    }
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .quantity-number {
+                        margin: 0px 5px;
+                    }
+                }
+
+                select {
+                    border: 1px solid #b3b3b3;
+                    border-radius: 4px;
+                    padding: 2px;
+                }
+            }
+
+            .delete-button {
+                cursor: pointer;
+            }
+
+
+        }
+    }
+}
+
+.cart-footer {
+    .cart-total {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+
+        .cart-total-value {
+            font-weight: bold;
+        }
+    }
+
+    .checkoutButton {
+        width: 100%;
+        background-color: black;
+        color: $main_color;
+        padding: 10px;
+    }
+}
+
+.cart-empty-text {
+    font-family: $title_font;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.ant-popconfirm-buttons {
+    button {
+        color: black;
+        border: #d9d9d9;
+    }
+}

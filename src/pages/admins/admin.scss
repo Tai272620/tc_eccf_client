@@ -1,0 +1,13 @@
+.admin-page {
+    color: black;
+    background-color: #fff;
+
+    .admin-page-content {
+        display: flex;
+
+        .admin-content-body {
+            width: 80%;
+            background-color: #f8f9f9;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.register_container {
+    margin: 0 auto;
+    padding: 30px 110px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $main_background_color;
+    color: $primary_color;
+    height: 90vh;
+
+    .register-left {
+        width: 35%;
+
+        h1 {
+            font-family: $title_font;
+            font-size: 5rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    .register-right {
+        width: 45%;
+        font-family: $content_font;
+        padding-top: 20px;
+
+        h2 {
+            font-size: 20px;
+            color: #8e0118;
+            text-align: center;
+            margin: 30px 0px;
+        }
+
+        p {
+            margin-bottom: 10px;
+
+            a {
+                text-decoration: underline;
+
+                &:hover {
+                    color: $primary_color;
+                }
+            }
+        }
+
+        input {
+            outline: none;
+            border: none;
+
+            padding: 7px;
+            margin: 10px 0px;
+            background-color: $main_background_color;
+            border-bottom: 1px solid $primary_color
+        }
+
+        .form_control {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            input::placeholder {
+                color: $primary_color !important;
+            }
+
+            .error-message {
+                color: red;
+                font-size: 0.7rem;
+            }
+        }
+
+        .register_btn {
+            background-color: black;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 10px 0px;
+            margin: 15px 0;
+            cursor: pointer;
+        }
+
+        .register_btn:hover {
+            background-color: #3f3935;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #ffffff;
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

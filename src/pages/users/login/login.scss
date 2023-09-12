@@ -1,0 +1,108 @@
+.login_container {
+    font-family: sans-serif;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $main_background_color;
+    height: 90vh;
+
+    .login-left {
+        width: 20%;
+
+        h1 {
+            font-family: $title_font;
+            font-size: 6rem;
+            letter-spacing: 3px;
+            line-height: 90px;
+        }
+    }
+
+    .login-right {
+        width: 50%;
+        font-family: $content_font;
+
+        p {
+            a {
+                text-decoration: underline;
+
+                &:hover {
+                    color: $primary_color;
+                }
+            }
+        }
+
+        input {
+            outline: none;
+            border: none;
+            padding: 7px;
+            margin: 10px 0px;
+            background-color: $main_background_color;
+            border-bottom: 1px solid $primary_color
+        }
+
+        .error-message {
+            color: red;
+            font-size: 12px;
+        }
+
+        .form-control-login {
+            display: flex;
+            border: none;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            input::placeholder {
+                color: $primary_color;
+            }
+        }
+
+        .login_btn {
+            background-color: black;
+            color: #fff;
+            border: none;
+            width: 40%;
+            padding: 10px 0px;
+            margin: 15px 0;
+            cursor: pointer;
+        }
+
+        .login_btn:hover {
+            background-color: #3f3935;
+        }
+
+        .login-google {
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100px;
+
+            img {
+                width: 20px;
+            }
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #ffffff;
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

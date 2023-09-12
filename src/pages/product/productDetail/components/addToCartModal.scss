@@ -1,0 +1,49 @@
+.modal-content {
+    top: 200px;
+}
+
+.modal-body {
+    .close-button {
+        margin-left: 95%;
+    }
+    font-family: "GT Flexa Lt";
+    padding: 30px;
+    h3 {
+        font-family: "Windsor Pro", sans-serif;
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    .product-desc {
+        font-size: 0.7rem;
+        margin: 10px 0px;
+    }
+    .product-price {
+        font-size: 0.7rem;
+    }
+    .product-quantity-label {
+        font-size: 0.7rem;
+        margin: 10px 0px;
+    }
+    .product-quantity {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 25%;
+        font-size: 0.7rem;
+        border-bottom: 1px solid;
+        button {
+            display: flex;
+            align-items: center;
+            font-size: 0.7rem;
+            .material-symbols-outlined {
+                font-size: 1rem;
+            }
+        }
+    }
+    .addToCart-button {
+        background-color: black;
+        color: $main_color;
+        padding: 10px;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,69 @@
+.addProduct-container {
+    font-family: $content_font;
+    padding: 30px;
+
+
+    .addProduct-nav {
+        display: flex;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    form {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 30px;
+        margin-top: 30px;
+
+        input {
+            outline: none;
+            border: 1px solid black;
+            padding: 7px 10px;
+            border-radius: 6px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        select {
+            outline: none;
+            border: 1px solid black;
+            padding: 7px 10px;
+            border-radius: 6px;
+            width: 100%;
+            margin-bottom: 20px;
+
+            option {
+                width: 100%;
+            }
+        }
+
+        .save-button {
+            background-color: black;
+            color: #fff;
+            padding: 7px 30px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #ffffff;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

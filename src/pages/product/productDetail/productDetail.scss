@@ -1,0 +1,125 @@
+.productDetail-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d6d0c8;
+
+    .product-gallery {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    .product-gallery.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .product-essential {
+        width: 40%;
+        font-family: "GT Flexa Lt";
+        padding: 70px 10px;
+
+        .product-header {
+            font-family: "Windsor Pro", sans-serif;
+
+            .product-title {
+                font-size: 3rem;
+                letter-spacing: 2px;
+            }
+        }
+
+        .product-quantity-label {
+            margin: 10px 0px;
+        }
+
+        .product-quantity {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 20%;
+            border-bottom: 1px solid #352f2b;
+
+            button {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .addToCart-button {
+            background-color: black;
+            color: $main_color;
+            padding: 15px;
+            width: 40%;
+            margin-top: 30px;
+        }
+
+    }
+}
+
+.recommend-products-container {
+    padding: 30px 0px;
+    background-color: #f6f5f3;
+
+    h2 {
+        font-family: "Windsor Pro", sans-serif;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .recommend-products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        min-width: 100%;
+        margin: 3% 0px;
+
+        .recommend-product {
+            width: 30%;
+
+            .recommend-product-image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 480px;
+                background-color: #e3ded7;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #d6d0c8;
+                }
+
+                img {
+                    width: 60%;
+                }
+            }
+
+            .recommend-product-desc {
+                .recommend-product-name {
+                    font-family: "Windsor Pro", sans-serif;
+                    font-size: 2rem;
+                }
+
+                .recommend-product-quantity {
+                    display: flex;
+                }
+            }
+
+            .addToCart-button {
+                border-bottom: 1px solid #7e7d7c;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+            }
+        }
+    }
+}
